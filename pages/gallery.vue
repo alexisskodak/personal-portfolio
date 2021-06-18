@@ -10,7 +10,7 @@
     </v-sheet>
     <div class="photo-grid">
       <v-img
-        :src="`/photographs/${image}`"
+        :src="`photographs/${image}`"
         contain
         alt="Photo"
         v-for="image in images"
