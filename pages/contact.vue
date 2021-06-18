@@ -2,7 +2,7 @@
   <section>
     <h1 class="text-h4 text-md-h2 font-weight-bold mt-3 mb-10">Contact</h1>
     <v-form>
-      <v-sheet class="rounded-xl pa-5 pa-md-10 mb-10">
+      <v-sheet class="rounded-xl pa-3 pa-md-10 mb-10">
         <v-card-title>{{ $t("contact.title") }}</v-card-title>
         <v-card-subtitle>{{ $t("contact.subtitle") }}</v-card-subtitle>
         <v-card-text>
