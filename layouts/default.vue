@@ -10,19 +10,19 @@
       </v-app-bar-title>
       <v-spacer></v-spacer>
       <div id="links">
-        <nuxt-link to="/" class="white--text text-decoration-none text-h6 mr-3">
+        <nuxt-link :to="localePath('/')" class="white--text text-decoration-none text-h6 mr-3">
           {{ $t("nav.home") }}
         </nuxt-link>
-        <nuxt-link to="/about" class="white--text text-decoration-none text-h6 mr-3">
+        <nuxt-link :to="localePath('/about')" class="white--text text-decoration-none text-h6 mr-3">
           {{ $t("nav.aboutme") }}
         </nuxt-link>
-        <nuxt-link to="/work" class="white--text text-decoration-none text-h6 mr-3">
+        <nuxt-link :to="localePath('/work')" class="white--text text-decoration-none text-h6 mr-3">
           {{ $t("nav.projects") }}
         </nuxt-link>
-        <nuxt-link to="/gallery" class="white--text text-decoration-none text-h6 mr-3">
+        <nuxt-link :to="localePath('/gallery')" class="white--text text-decoration-none text-h6 mr-3">
           {{ $t("nav.photography") }}
         </nuxt-link>
-        <nuxt-link to="/contact" class="white--text text-decoration-none text-h6">
+        <nuxt-link :to="localePath('/contact')" class="white--text text-decoration-none text-h6">
           {{ $t("nav.contact") }}
         </nuxt-link>
       </div>
@@ -32,30 +32,30 @@
       <v-list>
 
         <v-list-item class="text-h6">
-          <nuxt-link to="/" class="white--text text-decoration-none">
+          <nuxt-link :to="localePath('/')" class="white--text text-decoration-none">
             {{ $t("nav.home") }}
           </nuxt-link>
         </v-list-item>
 
         <v-list-item class="text-h6">
-          <nuxt-link to="/about" class="white--text text-decoration-none">
+          <nuxt-link :to="localePath('/about')" class="white--text text-decoration-none">
             {{ $t("nav.aboutme") }}
           </nuxt-link>
         </v-list-item>
 
         <v-list-item class="text-h6">
-          <nuxt-link to="/work" class="white--text text-decoration-none">
+          <nuxt-link :to="localePath('/work')" class="white--text text-decoration-none">
             {{ $t("nav.projects") }}
           </nuxt-link>
         </v-list-item>
 
         <v-list-item class="text-h6">
-          <nuxt-link to="/gallery" class="white--text text-decoration-none">
+          <nuxt-link :to="localePath('/gallery')" class="white--text text-decoration-none">
             {{ $t("nav.photography") }}
           </nuxt-link>
         </v-list-item>
         <v-list-item class="text-h6">
-          <nuxt-link to="/contact" class="white--text text-decoration-none">
+          <nuxt-link :to="localePath('/contact')" class="white--text text-decoration-none">
             {{ $t("nav.contact") }}
           </nuxt-link>
         </v-list-item>
