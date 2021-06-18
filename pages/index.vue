@@ -59,8 +59,8 @@
 
       <v-sheet class="pa-5 pa-md-10 rounded-xl" id="sheet-3">
         <p>{{ $t("index.p2") }}</p>
-        <v-btn color="secondary" outlined rounded :to="localePath('/work')" class="mr-3">my work</v-btn>
-        <v-btn color="secondary" outlined rounded :to="localePath('/contact')">contact me</v-btn>
+        <v-btn color="secondary" outlined rounded :to="localePath('/work')" class="mr-3">{{ $t('common.work') }}</v-btn>
+        <v-btn color="secondary" outlined rounded :to="localePath('/contact')">{{ $t('common.contact') }}</v-btn>
       </v-sheet>
     </div>
   </section>

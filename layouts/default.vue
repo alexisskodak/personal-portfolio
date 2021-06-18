@@ -26,6 +26,10 @@
           {{ $t("nav.contact") }}
         </nuxt-link>
       </div>
+      <div class="ml-3">
+        <nuxt-link :to="switchLocalePath('en')" class="text-overline white--text mx-1 text-decoration-none font-weight-bold">EN</nuxt-link>/
+        <nuxt-link :to="switchLocalePath('fr')" class="text-overline white--text mx-1 text-decoration-none font-weight-bold">FR</nuxt-link>
+      </div>
     </v-app-bar>
 
     <v-navigation-drawer app fixed bottom temporary clipped v-model="drawer">
@@ -70,7 +74,7 @@
         </v-container>
 
         <footer class="py-10" id="bg2">
-          <p class="text-overline">follow me on social media</p>
+          <p class="text-overline">{{ $t('common.network') }}</p>
           <div>
             <a href="https://github.com/sickb0i" class="mr-3">
               <v-icon large>$vuetify.icons.mdiGithub</v-icon>
