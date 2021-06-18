@@ -1,0 +1,8 @@
+{
+  "icons": [],
+  "start_url": "/personal-portfolio/?standalone=true",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#121212",
+  "lang": "en"
+}
