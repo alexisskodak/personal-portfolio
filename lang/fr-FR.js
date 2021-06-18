@@ -3,7 +3,8 @@ export default {
     link: 'suivez ce lien',
     stack: 'cadre technique',
     work: 'mes réalisations',
-    contact: 'contactez moi'
+    contact: 'contactez moi',
+    network: 'suivez moi sur les réseaux sociaux'
   },
 
   nav: {
@@ -18,8 +19,8 @@ export default {
     p1: `Je suis consultant en développement d'applications. A part mon travail, j'ai des nombreux projets personnels et j'aime transmettre les compétences et savoir-faire que j’ai acquis jusqu'à présent. Parmi les outils dont je m’en sers régulièrement figurent:`,
     list: {
       title: 'Ce que je fais',
-      pt1: `Développement d'interfaces modernes et réactives`,
-      pt2: `Conception d'architecture backend`,
+      pt1: `Interfaces modernes et réactives`,
+      pt2: `Infrastructure backend`,
       pt3: `Sysadmin Linux`,
       pt4: `Outils et tableaux de bord admin`
     },

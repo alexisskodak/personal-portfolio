@@ -3,7 +3,8 @@ export default {
     link: 'see it here',
     stack: 'tech stack',
     work: 'my work',
-    contact: 'contact me'
+    contact: 'contact me',
+    network: 'Follow me on social media'
   },
 
   nav: {
