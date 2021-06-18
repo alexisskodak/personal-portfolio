@@ -4,7 +4,9 @@ export default {
     stack: 'tech stack',
     work: 'my work',
     contact: 'contact me',
-    network: 'Follow me on social media'
+    network: 'Follow me on social media',
+    emailSuccess: 'Success. Thanks for submitting your message.',
+    emailError: 'Error. Try again later.'
   },
 
   nav: {

@@ -4,7 +4,9 @@ export default {
     stack: 'cadre technique',
     work: 'mes réalisations',
     contact: 'contactez moi',
-    network: 'suivez moi sur les réseaux sociaux'
+    network: 'suivez moi sur les réseaux sociaux',
+    emailSuccess: 'Succès. Merci pour votre message.',
+    emailError: 'Erreur. Veuillez essayer plus tard'
   },
 
   nav: {

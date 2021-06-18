@@ -13,7 +13,7 @@
           <v-text-field color="secondary" v-model="message.email" :label="labels.email" type="email" :rules="rules.emailRules"></v-text-field>
           <v-text-field color="secondary" v-model="message.subject" :label="labels.subject" counter="32" :rules="rules.subjectRules"></v-text-field>
           <v-textarea color="secondary" v-model="message.body" rows="4" :label="labels.message" :rules="rules.bodyRules" counter="250"></v-textarea>
-          <v-btn outlined class="mt-3" color="secondary" @click="handleForm">{{ labels.submit }}</v-btn>
+          <v-btn outlined class="mt-3" color="secondary" @click="handleForm(message)">{{ labels.submit }}</v-btn>
         </v-card-text>
       </v-sheet>
     </v-form>
@@ -85,7 +85,7 @@ export default {
   },
   methods: {
     handleResponse: function (res) {
-      this.msg = res
+      this.msg = res.status === 'Failed' ? this.$t('common.emailError') : this.$t('common.emailSuccess')
       this.snackbar = true
     },
     handleForm: async function (data) {
@@ -95,7 +95,7 @@ export default {
         toEmail: 'skodak95alexis@gmail.com',
         ToCCEmail: data.email,
         subject: data.subject,
-        mailBody: `${data.email}, ${data.fname?? 'Name not submitted'}, ${data.number ?? 'Number not submitted'}, wrote: ${data.message}`
+        mailBody: `${data.email}, ${data.fullname?? 'Name not submitted'}, ${data.phone ?? 'Number not submitted'}, wrote: ${data.body}`
       }
       const requestOptions = {
         method: 'POST',
@@ -105,6 +105,7 @@ export default {
         const response = await fetch(BASE_URL, requestOptions)
         const msg = await response.json()
         this.handleResponse(msg)
+
       } catch (e) {
         this.handleResponse(e)
       }
