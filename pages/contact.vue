@@ -45,8 +45,8 @@ export default {
       email: '',
       subject: '',
       body: '',
-      msg: '',
     },
+    msg: '',
     snackbar: false,
   }),
   computed: {
