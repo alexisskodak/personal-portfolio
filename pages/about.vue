@@ -12,7 +12,7 @@
             {{ $t("about.p2") }}
           </p>
         </div>
-        <v-img src="portrait/portrait.webp" width="225" class="ml-3 rounded-r-xl"></v-img>
+        <v-img src="portrait/portrait.webp" width="225" class="ml-md-3 rounded-md-r-xl"></v-img>
       </div>
 
 
