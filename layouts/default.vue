@@ -3,7 +3,7 @@
 
     <v-app-bar dense fixed app clipped-left>
       <v-app-bar-nav-icon @click="drawer = !drawer" id="navbar-icon"></v-app-bar-nav-icon>
-      <v-app-bar-title>
+      <v-app-bar-title class="pa-0">
         <nuxt-link to="/">
           <v-img :src="require('@/static/logo_dark.png')" height="45" width="45"></v-img>
         </nuxt-link>
